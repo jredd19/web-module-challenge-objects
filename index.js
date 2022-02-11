@@ -104,11 +104,11 @@ Write a function that creates an object with name, rating, feedback, add the new
 */
 
 function addReview(array, name, rating, feedback){
-  array.push({name: name, rating: rating, feedback: feedback })
+  array.push({name: name, rating: rating, feedback: feedback });
   return reviews;
 }
 
-addReview(reviews, 'Daniela', 5, 'great eats!');
+console.log(addReview(reviews, 'Daniela', 5, 'great eats!'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -122,12 +122,11 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(array, num1) {
-  const net = array[num1]
+  const net = array[num1];
     return  `${array[num1].name} gave the restaurant a ${array[num1].rating} star review, and their feedback was: ${array[num1].feedback}`;
 }
 
-
-console.log(getReviewByIndex(reviews, 0));
+getReviewByIndex(reviews, 0);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
@@ -141,11 +140,12 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  const lastOpinion = array[array.length -1]
+  return `${lastOpinion.name} gave the restaurant a ${lastOpinion.rating} star review, and their feedback was: ${lastOpinion.feedback}`;
 } 
 
-
+console.log(getLastReview(reviews));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
