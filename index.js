@@ -81,7 +81,7 @@ Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
 
-console.log(reviews[5].feedback)
+console.log(reviews[5].feedback);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -90,7 +90,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-console.log(reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays")
+console.log(reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays");
 
 
 
@@ -105,10 +105,10 @@ Write a function that creates an object with name, rating, feedback, add the new
 
 function addReview(array, name, rating, feedback){
   array.push({name: name, rating: rating, feedback: feedback })
-  return reviews
+  return reviews;
 }
 
-console.log(addReview(reviews, 'Daniela', 5, 'great eats!'))
+addReview(reviews, 'Daniela', 5, 'great eats!');
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -122,15 +122,12 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(array, num1) {
-  function opinion(name, rating, feedback){
-    let message = `${name} gave the restaurant a ${rating} star review, and their feedback was: ${feedback}`
-    return message
-  }
-  return reviews[num1]
+  const net = array[num1]
+    return  `${array[num1].name} gave the restaurant a ${array[num1].rating} star review, and their feedback was: ${array[num1].feedback}`;
 }
 
 
-  console.log(getReviewByIndex(reviews, 7))
+console.log(getReviewByIndex(reviews, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
