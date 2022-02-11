@@ -121,9 +121,12 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(array, index) {
-  let message = `${name} gave the restaurant a ${rating} star review, and their feedback was: ${feedback}`
-  return message
+function getReviewByIndex(array, num1) {
+  function opinion(name, rating, feedback){
+    let message = `${name} gave the restaurant a ${rating} star review, and their feedback was: ${feedback}`
+    return message
+  }
+  return reviews[num1]
 }
 
 
